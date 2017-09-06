@@ -1,0 +1,35 @@
+{
+      "token":"",
+      "avatar_url": "http://localhost:8080/static/touxiang.jpg",
+      "id": 0,
+      "loginname": "admin",
+      "depat":"用户体验部",
+      "job":"设计师",
+      "level":"正级管理者",
+      "tel":13890988989,
+      "email":"wfeoifjo@email.cn",
+      "crmDatas":[{
+                      "id":0,
+                      "pic_url": "http://localhost:8080/static/logo.png",
+                      "name": "杭州绑定科技有限公司",
+                      "adress":"杭州下沙科技路288号",
+                      "ower":"我",
+                      "level":"A"
+                    },
+                  {
+                      "id":1,
+                      "pic_url": "http://localhost:8080/static/touxiang.jpg",
+                      "name": "浙江大牛地科技有限公司",
+                      "adress":"浙江省江岸下沙科技路288号",
+                      "ower":"张思",
+                      "level":"B "
+                    },
+                  {
+                      "id":2,
+                      "pic_url": "http://localhost:8080/static/touxiang.jpg",
+                      "name": "江苏蓝天科技有限公司",
+                      "adress":"江苏省南京市雨花台区西单路1号",
+                      "ower":"王卡",
+                      "level":"C "
+                    }]
+}

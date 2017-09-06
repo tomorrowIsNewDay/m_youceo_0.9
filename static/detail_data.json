@@ -1,0 +1,61 @@
+{
+        "id":0,
+        "type":"",
+        "pic_url":"http://localhost:8080/static/logo.png",
+        "name":"孙灵光提交检查",
+        "content":"地方上的纠纷 i 哦上帝电费水电费说的都是佛教圣帝电费水电费说的都是佛教圣帝电费水电费说的都是佛教圣地",
+        "finish_date":"1231231223",
+        "finish_date_str":"2016年12月09日",
+        "remaining_time":"20",
+        "target_name":"实验次数",
+        "target_val":"45",
+        "relevance":{
+            "pic_url":"http://localhost:8080/static/logo.png",
+            "name":"国美电器"
+        },
+        "workflow":{},
+        "ps":"",
+        "response_depart":{
+            "depart":"技术部",
+            "explain":"explain"
+        },
+        "dynamic_data":[{
+            "pic_url":"http://localhost:8080/static/logo.png",
+            "user_name":"孙灵光",
+            "user_depart":"设计部",
+            "user_job":"设计师",
+            "post_time":"1分钟亲啊",
+            "post_content":"好的，尽快完成"
+        },{
+            "pic_url":"http://localhost:8080/static/logo.png",
+            "user_name":"孙灵光",
+            "user_depart":"设计部",
+            "user_job":"设计师",
+            "post_time":"1分钟亲啊",
+            "post_content":"好的，尽快完成"
+        },{
+            "pic_url":"http://localhost:8080/static/touxiang.jpg",
+            "user_name":"孙光",
+            "user_depart":"设计部",
+            "user_job":"设计师",
+            "post_time":"1分钟亲啊",
+            "post_content":"好的，尽快完成"
+        }],
+        "attachment_data":[{
+            "type":"PDF",
+            "file_name":"2016-12-12.doc",
+            "file_post_time":"2016-11-21 12:00:12",
+            "pic_url":"http://localhost:8080/static/touxiang.jpg"
+        },{
+            "type":"PDF",
+            "file_name":"2016-11-12.doc",
+            "file_post_time":"2016-11-21 12:00:12",
+            "pic_url":"http://localhost:8080/static/logo.png"
+        },{
+            "type":"PDF",
+            "file_name":"2017-8-12.doc",
+            "file_post_time":"2016-11-21 12:00:12",
+            "pic_url":"http://localhost:8080/static/touxiang.jpg"
+        }]
+}
+

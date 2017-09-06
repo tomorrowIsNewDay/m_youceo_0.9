@@ -1,0 +1,307 @@
+@chart='utf-8';
+html{
+    font-size: 20px;
+}
+body{
+    line-height:1;
+    color:rgb(51,51,51);
+    font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background:rgb(241,241,241);
+}
+
+input,textarea,select{
+    font-size:14px;
+    font-size:100%;
+    font-family:arial;
+    font-family:inherit;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form,dd{
+    margin:0;
+}
+h4,h5,h6{
+    font-size:1em;
+}
+ul,ol{
+    padding-left:0;
+    list-style-type:none;
+}
+/*image with no-border*/
+a{text-decoration: none}
+a img{border:0;}
+img{border:0;}
+/********************************************css样式reset********************************************/
+
+/********************************************通用css样式********************************************/
+/**************************icon 样式 需要放前面 避免样式冲突*****************************/
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+   font-size: 18px;
+}
+
+.pull-left{float: left;}
+.pull-right{float: right;}
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.vm{vertical-align: middle;}
+.p0{padding: 0}
+.yc-panel.p0{padding: 0}
+.yc-panel.mb0{margin-bottom: 0}
+.m0{margin:0}
+.mt10,.hasMgTop{margin-top: 10px}
+.mb10,.hasMgBottom{margin-bottom: 10px}
+.fw_normal{font-weight: normal;}
+.ml5{margin-left: 5px}
+.mr5{margin-right: 5px}
+.lh1{line-height: 1}
+.dis-ib{  display: inline-block;}
+.vm{vertical-align: middle};
+.bor-t-1{
+        border-top: 1px solid rgb(241,241,241)
+    }
+.bor-top-1{border-top: 1px solid #eee}
+.bor-top-1:first-child{border-top:0}
+/********************* 单行文字溢出虚点显 示*********************/
+.text-ellipsis{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+/* 大小不定元素垂直居中 */
+.dib_vm{display:inline-block; width:0; height:100%; vertical-align:middle;}
+.cell{display: table-cell;*display:inline-block;width: 2000px;*width:auto}
+/********************************************网站css样式********************************************/
+
+
+/***********************************布局***********************************/
+.row {margin-right: -5px;margin-left: -5px;}
+.col-1,.col-2, .col-3, .col-4, .col-5, .col-6,.col-7,.col-8, .col-9, .col-10, .col-11, .col-12{box-sizing: border-box;position: relative;min-height: 1px;float: left;padding-right: 5px;padding-left: 5px;}
+.col-12 {width: 100%;}
+.col-11{width: 91.66666667%;}
+.col-10 {width: 83.33333333%;}
+.col-9 {width: 75%;}
+.col-8 {width: 66.66666667%;}
+.col-7 {width: 58.33333333%;}
+.col-6 {width: 50%;}
+.col-5 {width: 41.66666667%;}
+.col-4 {width: 33.33333333%;}
+.col-3 {width: 25%;}
+.col-2 {width: 16.66666667%;}
+.col-1 {width: 8.33333333%;}
+.box-flex {display: -webkit-box;display: -ms-flexbox;display: flex;}
+.box-flex>span,.box-flex>a,.box-flex>div {display: block;-webkit-box-flex: 1;-ms-flex: 1;flex: 1;}
+.box-flex>.flex-1 {-webkit-box-flex: 1;-ms-flex: 1;flex: 1;}
+.box-flex>.flex-2 {-webkit-box-flex: 2;-ms-flex: 2;flex: 2;}
+.box-flex>.flex-3 {-webkit-box-flex: 3;-ms-flex: 3;flex: 3;}
+
+/********inline-block列表********/
+.inline-box{font-size:0; word-spacing: -3px; font-family:Arial;}
+.inline_fix{display:inline-block; width:100%; height:0; overflow:hidden;}
+.inline-1,.inline-2, .inline-3, .inline-4, .inline-5, .inline-6{box-sizing: border-box;position: relative;min-height: 1px;display: inline-block;font-size: 14px;word-spacing: 0;vertical-align: middle;}
+.inline-6 {width: 100%;}
+.inline-5 {width: 83.33333333%;}
+.inline-4 {width: 66.66666667%;}
+.inline-3 {width: 50%;}
+.inline-2 {width: 33.33333333%;}
+.inline-1 {width: 16.66666667%;}
+/**************************清除浮动*****************************/
+.clearfix:before,.clearfix:after,.row:before,.row:after  {content: " ";display: table;}
+.clearfix:after,.row:after{clear: both;}
+/**************************面板*****************************/
+.yc-panel{
+    padding: .75rem;
+    background: #fff;
+}
+.yc-cell{
+    height: 2.3rem;
+    line-height: 2.3rem;
+    padding:0 .75rem;
+    background: #fff;
+}
+/* .yc-panel.hasMgTop:first-child{
+      margin-top: 0
+ }
+  .yc-panel.hasMgTop{
+     margin-top: 10px;
+ */
+.yc-panel-logo{
+    float: left;
+    margin-right: 10px;
+}
+.yc-panel-content{
+    margin: 10px 0;
+    line-height: 22px;
+    word-wrap: break-word;
+}
+.yc-panel-desc{
+    font-size: 13px;
+    line-height: 22px;
+    color: rgb(153,153,153)
+}
+.yc-panel-operate{
+    float: right;
+}
+.userinfo-bar>img,.userinfo-bar>.yc-icon{float: left;margin-right: 8px;}
+.yc-panel-title {font-size: 14px;line-height: 22px; width: auto; }
+/**************************头像 ／ icon 样式*****************************/
+.yc-panel-logo,.yc-icon,.avatar{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: rgb(238,238,238);
+    color: rgb(41,149,237)
+}
+.avatar-lg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.avatar-lger{
+    width: 3rem;
+    height: 3rem;
+}
+
+/**************************布局 值*****************************/
+.mb10{margin-bottom: .5rem}
+.ptHeader{padding-top: 2.4rem}
+.mr10{margin-right: .5rem}
+.pt0{padding-top: 0}
+/**************************字体大小*****************************/
+.f14{font-size: 14px}
+.fs15{font-size: 1.5em}
+.fs2{font-size: 2em}
+.fs25{font-size: 2.5em}
+.lh22{
+    line-height: 22px
+}
+/**************************字体颜色*****************************/
+.text-white{color:#fff}
+.text-default{color:rgb(51,51,51)}
+.text-primary{color:rgb(41,149,237)}
+.bg-primary{background-color:rgb(41,149,237)}
+.text-muted{color: rgb(153,153,153)}
+.bg-default{background: rgb(241,241,241)}
+.text-red{color: rgb(222,9,9)}
+/**************************input中占位符 色／ 申请终止*****************************/
+.text-gray{color:rgb(204,204,204)}
+.bg-gray{background: rgb(204,204,204)}
+.text-submit{color: rgb(62,216,96)}
+/**************************超期*****************************/
+.text-danger{color:rgb(255,131,131)}
+.bg-danger{background-color: rgb(255,131,131)}
+.bg-info{background-color: rgb(246,250,254)}
+._25em{font-size: 2.5em}
+.container {margin: 0 auto;padding: 10px}
+.bg-white{background-color: #fff}
+.border-b_1{border-bottom: 1px solid #eee}
+.shadow_Y{box-shadow: 0 1px 1px rgba(184,184,184,.5)}
+.header_img{width: 20px;height: 20px;border-radius: 50%;display: inline-block;vertical-align: middle;}
+.header_img_30{width: 30px;height: 30px;border-radius: 50%;display: inline-block;vertical-align: middle;}
+.header_img_35{width: 35px;height: 35px;border-radius: 50%;display: inline-block;vertical-align: middle;}
+/**************************右下角圆形按钮 *****************************/
+.btn-circle {display:inline-block;height: 13vw;width: 13vw;line-height: 13vw;color: #fff;background-color: #2995e7;border-radius: 50%;box-shadow:0 4px 6px 1px rgba(0,0,0,.15);text-align: center;}
+.btn-circle-plus {position: fixed;right: 15px;bottom: 70px;}
+/*重置样式*/
+.mint-cell-wrapper{background-image: none;border-top:1px solid rgb(238,238,238)}
+.mint-cell-text{color: rgb(153,153,153);font-size: 14px}
+.mint-cell-value{color:rgb(51,51,51);font-size: 14px}
+.mint-header{background-color: rgb(41,149,237)}
+/**************************组件 *****************************/
+/** button*/
+.btn{
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    border-radius: 2px;
+    border:0;
+}
+.btn:focus{
+    outline: 0
+}
+.btn-primary{
+    color: #fff;
+    background: rgb( 41,149,237);
+}
+/** 搜索框*/
+.form-control{
+    display: inline-block;
+    padding: 3px;
+
+    width:100%;
+    font-size: 14px;
+    border-radius: 3px;
+    border:1px solid transparent
+}
+.form-control:focus{
+    // border: 1px solid rgb( 41,149,237);
+    outline: none
+}
+.notCompleteMsg{
+    text-align: center;
+    color:rgb(170,170,170);
+    padding-top: 1.3rem
+}
+.wrokFlowLabel{
+    padding: 2px 4px;
+    color: #fff;
+    background: rgb(166,215,255)
+}
+.yc-label{
+        display: inline;
+        padding: 3px 6px;
+        line-height: 1;
+        color: rgb(41,149,237);
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        border-radius: 6px;
+        border:1px solid ;
+
+}
+.yc-panel>.txt{
+    margin-top:.75rem;
+}
+/** 企业资料／个人资料 顶部信息盒子*/
+.yc-info{
+    padding: 1rem 0;
+    text-align: center;
+    background: rgb(246,250,254);
+    line-height: 30px;
+}
+.yc-info>.info-desc{
+    color: rgb(153,153,153);
+    font-size: .8em;
+    line-height: 22px
+}
+/** 员工级别 星星标志*/
+.text-star{color: rgb(241,178,0)}
+/** 添加审批人*/
+.addApprover{padding-left: .75rem;}
+.list>h4{
+    padding:.5rem .75rem;
+    font-size: 12px;
+    color:rgb(153,153,153);
+    line-height: 22px;
+}
+/** 下拉框*/
+.yc-dropdown{
+    border-top: 1px solid rgb(238,238,238)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
