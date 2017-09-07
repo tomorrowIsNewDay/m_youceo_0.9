@@ -1,0 +1,16 @@
+[{
+    "id": 0,
+    "is_self":true,
+    "pic_url": "http://localhost:8080/static/logo.png",
+    "name": "孙灵光指派",
+    "time": "准时完成",
+    "content": "这地方 i 史蒂夫 i水电费水电费说的都是佛教圣地"
+},{
+    "id": 1,
+    "is_self":false,
+    "pic_url": "http://localhost:8080/static/logo.png",
+    "name": "孙灵光指派",
+    "time": "准时完成",
+    "content": "这地方 i 史蒂夫 i水电费水电费说史蒂夫 i水电费水电费说的都是佛教圣史蒂夫 i水电费水电费说的都是佛教圣的都是佛教圣地"
+}
+]
