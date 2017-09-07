@@ -1,11 +1,9 @@
 <template>
     <div class="userinfoEdit">
         <mt-header fixed title="修改个人资料">
-            <!-- <router-link to='/userinfo/this.$route.params.loginname' slot="left"> -->
-                <mt-button icon="back" @click="back" slot="left">返回</mt-button>
-            <!-- </router-link> -->
+             <mt-button icon="back" @click="$router.go(-1)" slot="left">返回</mt-button>
         </mt-header>
-        <div class="yc-panel inline-box" >
+        <div class="yc-panel inline-box">
                 <span class="inline-3">
                      <img :src="userData.avatar_url" class="avatar avatar-lger">
                 </span>
@@ -52,18 +50,20 @@ import { mapGetters } from 'vuex'
             }
          },
 
-         created:{
-
+         mounted(){
+                this.data.loginname = this.userData.loginname;
+                this.data.depat = this.userData.depat;
+                this.data.job = this.userData.job;
+                this.data.level = this.userData.level;
+                this.data.tel = this.userData.tel;
+                this.data.email = this.userData.email
          },
 
          methods: {
-            back(){
-                this.$router.go(-1);
-            },
-            // 提交
+            // // 提交
             onPost(){
-              //调用上传信息接口
-              // 切换路由到上一级
+            //   //调用上传信息接口
+            //   // 切换路由到上一级
               console.log(this.data)
             }
          },

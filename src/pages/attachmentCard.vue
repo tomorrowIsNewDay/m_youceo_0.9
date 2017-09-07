@@ -11,29 +11,8 @@
                     </mt-button>
             </h6>
             <div class="list-body">
-                  <mt-cell-swipe v-for="(item, idx) in detailData.attachment_data" :key="item.id"
-                      :right="[
-                        {
-                          content: '下载',
-                          style: { background: 'rgb(41,149,237)', color: '#fff' }
-                        },
-                        {
-                          content: '删除',
-                          style: { background: 'rgb(241,241,241)', color: 'rgb(153,153,153)' }
-                        }
-                      ]">
-                        <div slot="title">
-                            <svg class="icon text-primary pull-left mr10 fs25" aria-hidden="true">
-                              <use xlink:href="#icon-pdf"></use>
-                           </svg>
-                           <h4 class="file-name">{{ item.file_name }}</h4>
-                           <small class="text-muted">{{ item.file_post_time }}</small>
-                       </div>
-                        <div>
-                            <img :src="item.pic_url" class="avatar">
-                        </div>
-                  </mt-cell-swipe>
-                  <v-touch v-on:swipeleft="onSwipeLeft" v-on:swiperight="onSwipeRight">
+            <!-- v-for="(item, idx) in detailData.attachment_data" :key="item.id" -->
+                  <v-touch v-on:swipeleft="onSwipeLeft" v-on:swiperight="onSwipeRight" >
                       <div class="swipe-wrap">
                         <div class="swipe-box" ref="swipeBox">
                           <div class="pull-right swipe-right">
@@ -43,7 +22,7 @@
                                           <use xlink:href="#icon-tuidong"></use>
                                       </svg>
                                   </mt-button>
-                                  <mt-button size="small" plain class='text-mute'>
+                                  <mt-button size="small" plain class='text-mute' >
                                       <svg class="icon" aria-hidden="true">
                                           <use xlink:href="#icon-tuidong"></use>
                                       </svg>
@@ -53,8 +32,34 @@
                                 <svg class="icon text-primary pull-left mr10 fs25" aria-hidden="true">
                                   <use xlink:href="#icon-pdf"></use>
                                  </svg>
-                                <h4 class="file-name">sdf</h4>
-                                <small class="text-muted">sdfsdf</small>
+                                <h4 class="file-name">342</h4>
+                                <small class="text-muted">2342</small>
+                           </div>
+                       </div>
+                      </div>
+                    </v-touch>
+                     <v-touch v-on:swipeleft="onSwipeLeft1" v-on:swiperight="onSwipeRight1" >
+                      <div class="swipe-wrap">
+                        <div class="swipe-box" ref="swipeBox1">
+                          <div class="pull-right swipe-right">
+                                  <img src="../assets/images/logo.png" class="avatar">
+                                  <mt-button size="small" plain class='text-primary'>
+                                      <svg class="icon" aria-hidden="true">
+                                          <use xlink:href="#icon-tuidong"></use>
+                                      </svg>
+                                  </mt-button>
+                                  <mt-button size="small" plain class='text-mute' >
+                                      <svg class="icon" aria-hidden="true">
+                                          <use xlink:href="#icon-tuidong"></use>
+                                      </svg>
+                                  </mt-button>
+                           </div>
+                            <div class="swipe-left">
+                                <svg class="icon text-primary pull-left mr10 fs25" aria-hidden="true">
+                                  <use xlink:href="#icon-pdf"></use>
+                                 </svg>
+                                <h4 class="file-name">342</h4>
+                                <small class="text-muted">2342</small>
                            </div>
                        </div>
                       </div>
@@ -77,6 +82,12 @@ export default {
       },
       onSwipeRight: function(ev){
         this.$refs.swipeBox.style.left = 0 +"px";
+      },
+      onSwipeLeft1: function(ev){
+        this.$refs.swipeBox1.style.left = -20 +"vw";
+      },
+      onSwipeRight1: function(ev){
+        this.$refs.swipeBox1.style.left = 0 +"px";
       }
     }
 }
