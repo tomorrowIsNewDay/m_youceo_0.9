@@ -72,7 +72,7 @@ export default {
             text-indent: -999em
         }
         .login-btn{
-            width: 80%;
+            width: 90%;
             margin: 0 auto
         }
 </style>

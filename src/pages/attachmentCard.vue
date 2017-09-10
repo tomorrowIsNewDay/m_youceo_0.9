@@ -12,54 +12,28 @@
             </h6>
             <div class="list-body">
             <!-- v-for="(item, idx) in detailData.attachment_data" :key="item.id" -->
-                  <v-touch v-on:swipeleft="onSwipeLeft" v-on:swiperight="onSwipeRight" >
+                  <v-touch v-on:swipeleft="onSwipeLeft(idx)" v-on:swiperight="onSwipeRight(item.id)" v-for="(item, idx) in detailData.attachment_data" :key="item.id">
                       <div class="swipe-wrap">
                         <div class="swipe-box" ref="swipeBox">
                           <div class="pull-right swipe-right">
-                                  <img src="../assets/images/logo.png" class="avatar">
-                                  <mt-button size="small" plain class='text-primary'>
+                                  <img :src="item.pic_url" class="avatar vm">
+                                  <mt-button size="small" plain class='text-primary vm' @click.native="down($event)">
                                       <svg class="icon" aria-hidden="true">
                                           <use xlink:href="#icon-tuidong"></use>
                                       </svg>
                                   </mt-button>
-                                  <mt-button size="small" plain class='text-mute' >
-                                      <svg class="icon" aria-hidden="true">
-                                          <use xlink:href="#icon-tuidong"></use>
-                                      </svg>
-                                  </mt-button>
-                           </div>
-                            <div class="swipe-left">
-                                <svg class="icon text-primary pull-left mr10 fs25" aria-hidden="true">
-                                  <use xlink:href="#icon-pdf"></use>
-                                 </svg>
-                                <h4 class="file-name">342</h4>
-                                <small class="text-muted">2342</small>
-                           </div>
-                       </div>
-                      </div>
-                    </v-touch>
-                     <v-touch v-on:swipeleft="onSwipeLeft1" v-on:swiperight="onSwipeRight1" >
-                      <div class="swipe-wrap">
-                        <div class="swipe-box" ref="swipeBox1">
-                          <div class="pull-right swipe-right">
-                                  <img src="../assets/images/logo.png" class="avatar">
-                                  <mt-button size="small" plain class='text-primary'>
-                                      <svg class="icon" aria-hidden="true">
-                                          <use xlink:href="#icon-tuidong"></use>
-                                      </svg>
-                                  </mt-button>
-                                  <mt-button size="small" plain class='text-mute' >
+                                  <mt-button size="small" plain class='text-mute vm'  @click.native="del($event)">
                                       <svg class="icon" aria-hidden="true">
                                           <use xlink:href="#icon-tuidong"></use>
                                       </svg>
                                   </mt-button>
                            </div>
                             <div class="swipe-left">
-                                <svg class="icon text-primary pull-left mr10 fs25" aria-hidden="true">
+                                <svg class="icon text-primary pull-left mr10 fs25 mt5" aria-hidden="true">
                                   <use xlink:href="#icon-pdf"></use>
                                  </svg>
-                                <h4 class="file-name">342</h4>
-                                <small class="text-muted">2342</small>
+                                <h4 class="file-name">{{ item.file_name }}</h4>
+                                <small class="text-muted">{{ item.file_post_time }}</small>
                            </div>
                        </div>
                       </div>
@@ -77,18 +51,20 @@ export default {
         }
     },
     methods:{
-      onSwipeLeft: function(ev){
+      down: function(ev){
+        console.log(ev.target)
+      },
+      del: function(ev){
+        console.log(ev.target)
+      },
+      onSwipeLeft: function(idx){
+        console.log(idx)
         this.$refs.swipeBox.style.left = -20 +"vw";
       },
-      onSwipeRight: function(ev){
+      onSwipeRight: function(idx){
+        console.log(idx)
         this.$refs.swipeBox.style.left = 0 +"px";
       },
-      onSwipeLeft1: function(ev){
-        this.$refs.swipeBox1.style.left = -20 +"vw";
-      },
-      onSwipeRight1: function(ev){
-        this.$refs.swipeBox1.style.left = 0 +"px";
-      }
     }
 }
 </script>
@@ -105,7 +81,7 @@ export default {
                 }
     }
     .swipe-wrap{
-      position: relative;width: 100vw;overflow: hidden;height: 46px;background: #fff;
+      position: relative;width: 100vw;overflow: hidden;height: 46px;background: #fff;line-height:46px;
       .swipe-box{
         position: absolute;left:0;height: 100%;top: 0;width: 120vw;transition: left .5s ease;padding: 0 .75rem;
         .swipe-right{
@@ -113,4 +89,5 @@ export default {
         }
       }
     }
+    .mt5{margin-top: 5px}
 </style>
