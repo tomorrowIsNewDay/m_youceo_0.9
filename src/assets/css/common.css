@@ -56,10 +56,11 @@ img{border:0;}
 .mb10,.hasMgBottom{margin-bottom: 10px}
 .fw_normal{font-weight: normal;}
 .ml5{margin-left: 5px}
+.mt5{margin-top: 5px}
 .mr5{margin-right: 5px}
 .lh1{line-height: 1}
 .dis-ib{  display: inline-block;}
-.vm{vertical-align: middle};
+.vm{vertical-align: middle}
 .bor-t-1{
         border-top: 1px solid rgb(241,241,241)
     }
